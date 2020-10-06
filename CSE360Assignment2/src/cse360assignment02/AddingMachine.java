@@ -1,26 +1,35 @@
 package cse360assignment02;
 
 public class AddingMachine {
-    private int total;
+	private int total;
 
-    public AddingMachine () {
-        total = 0;  // not needed - included for clarity 
-    }
+	private String tostring;
 
-    public int getTotal () {
-        return 0;
-    }
+	public AddingMachine() {
+		total = 0; // not needed - included for clarity
+		tostring = "0";
+	}
 
-    public void add (int value) {
-    }
+	public int getTotal() {
+		return total;
+	}
 
-    public void subtract (int value) {
-    }
+	public void add(int value) {
+		total += value;
+		tostring = tostring + " + " + value;
+	}
 
-    public String toString () {
-        return "";
-    }
+	public void subtract(int value) {
+		total -= value;
+		tostring = tostring + " - " + value;
+	}
 
-    public void clear() {
-    }
+	public String toString() {
+		return tostring;
+	}
+
+	public void clear() {
+		tostring = "0";
+		total = 0;
+	}
 }
