@@ -3,7 +3,6 @@ package cse360assignment02;
 public class AddingMachine {
     private int total;
 
-    
     public AddingMachine () {
         total = 0;  // not needed - included for clarity 
     }
